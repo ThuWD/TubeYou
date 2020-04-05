@@ -1,0 +1,23 @@
+{
+    "name": "GameBoy Games",
+    "description": "All your favourite GameBoy Games at your fingertips!",
+    "manifest_version": 2,
+    "version": "0.0.2",
+    "icons": {
+        "128": "icons/icon_128.png",
+        "96": "icons/icon_96.png",
+        "80": "icons/icon_80.png",
+        "64": "icons/icon_64.png",
+        "48": "icons/icon_48.png",
+        "36": "icons/icon_36.png",
+        "16": "icons/icon_16.png"
+
+    },
+
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": "icons/icon_128.png"
+    },
+
+    "permissions": ["downloads"]
+}
