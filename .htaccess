@@ -1,4 +1,0 @@
-//Block users by IP
-order allow,deny
-deny from 124.171.131.99
-allow from 
