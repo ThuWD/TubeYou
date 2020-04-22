@@ -1,0 +1,4 @@
+AuthUserFile /.htaccess
+AuthName "ThuWD"
+AuthType Basic
+require valid-user
