@@ -47,11 +47,16 @@
     <div class="fourohfour" onclick="activate()">
         404
     </div>
-    <script>
-	function activate() {
-    document.write('Bruh');
-    }
-    </script>
+<script>
+function activate() {
+var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://google.com/");
+        ifrm.style.width = "640px";
+        ifrm.style.height = "480px";
+        document.body.appendChild(ifrm);";
+  document.body.appendChild(para);
+}
+</script>
     <!--
     lol
     -->
