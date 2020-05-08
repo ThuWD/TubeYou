@@ -2,6 +2,12 @@
 <html>
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+  <head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by  ThuWD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://unpkg.com/plyr@3/dist/plyr.css'><link rel="stylesheet" href="style.css">
+
 <style>
   html {
   background-image: url('https://cdn.jsdelivr.net/gh/ThuWD/TubeYou/bg.jpg')
@@ -20,7 +26,28 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   <center>
-<video width="1000px" src="https://www.dropbox.com/s/r9dumymzplq4jxd/Thor%20Ragnarok.mp4?raw=1" controls></video>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<video controls crossorigin playsinline poster="https://cdn.jsdelivr.net/gh/ThuWD/TubeYou/Thumbnails/Movies/Marvel.Thor.Ragnarok.2017.jpg">
+	    
+			<source src="https://uc57c5960e01193ed5ba504d8d77.dl.dropboxusercontent.com/cd/0/inline/A3WxwmLbh-xChrIb65NyggY-kQJ0bGR2L3JUa5Xiuog1PKwk6F3MNdP--z093_szgZyPWtECEg4hLHN5D7YW1ozqcsOUCkzBNCN26dAi7u0zIP_IbNQxka1Tsv-xGpVITvA/file#" type="video/mp4" size="1080">
+
+			<!-- Caption files -->
+			<!-- Fallback for browsers that don't support the <video> element -->
+	</video>
+</div>
+<!-- Plyr resources and browser polyfills are specified in the pen settings -->
+<!-- partial -->
+  <script src='https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script>
+<script src='https://unpkg.com/plyr@3'></script><script>// Change the second argument to your options:
+// https://github.com/sampotts/plyr/#options
+const player = new Plyr('video', { captions: { active: true } });
+
+// Expose player so it can be used from the console
+window.player = player;</script>
+
+</body>
   </center>
   <div class="description">
   <center>
