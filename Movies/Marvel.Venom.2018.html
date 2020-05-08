@@ -19,10 +19,28 @@
   <title>Venom</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-  <center>
-<video width="1000px" 
-src="https://www.googleapis.com/drive/v3/files/1-CNH9mykLuGqUmpSA1--3URx74XPIrGX?alt=media&key=AIzaSyAoFWVP6TQzItbJ2GVkReKP6QpU63Wt7gA" controls></video>
-  </center>
+  <body>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<video controls crossorigin playsinline poster="https://cdn.jsdelivr.net/gh/ThuWD/TubeYou/Thumbnails/Movies/Marvel.Thor.Ragnarok.2017.jpg">
+	    
+			<source src="https://www.googleapis.com/drive/v3/files/1-CNH9mykLuGqUmpSA1--3URx74XPIrGX?alt=media&key=AIzaSyAoFWVP6TQzItbJ2GVkReKP6QpU63Wt7gA" type="video/mp4" size="1080">
+
+			<!-- Caption files -->
+			<!-- Fallback for browsers that don't support the <video> element -->
+	</video>
+</div>
+<!-- Plyr resources and browser polyfills are specified in the pen settings -->
+<!-- partial -->
+  <script src='https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script>
+<script src='https://unpkg.com/plyr@3'></script><script>// Change the second argument to your options:
+// https://github.com/sampotts/plyr/#options
+const player = new Plyr('video', { captions: { active: true } });
+
+// Expose player so it can be used from the console
+window.player = player;</script>
+
+</body>
   <div class="description">
   <center>
   Venom
